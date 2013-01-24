@@ -21,31 +21,43 @@
       function MyController($scope){
         $scope.newModule = "ex: MGMT215";
         $scope.messages = []; 
+  
         $scope.newMGMT215="";
+        $scope.newMGMT215courseInfo="";
+  
         $scope.newIS305="";
+        $scope.newIS305courseInfo="";
+        
         $scope.newIS424="";
+        $scope.newIS424courseInfo="";
+        
         $scope.newIS429="";
+        $scope.newIS429courseInfo = "";
         
         
         $scope.add = function(){
          // $scope.messages.push($scope.newMessage);
           if($scope.newModule === "MGMT215"){
           $scope.newMGMT215="MGMT215";
-          $scope.messages.push($scope.newDisplay);
+          $scope.newMGMT215courseInfo = "Click here for Course Info"
+          $scope.messages.push($scope.newModule);
         } else 
         if($scope.newModule === "IS305"){
           $scope.newIS305="IS305";
-          $scope.messages.push($scope.newDisplay);
+          $scope.newIS305courseInfo = "Click here for Course Info"
+          $scope.messages.push($scope.newModule);
         }
         else 
         if($scope.newModule === "IS424"){
           $scope.newIS424="IS424";
-          $scope.messages.push($scope.newDisplay);
+          $scope.newIS424courseInfo = "Click here for Course Info"
+          $scope.messages.push($scope.newModule);
         }
         else 
         if($scope.newModule === "IS429"){
           $scope.newIS429="IS429";
-          $scope.messages.push($scope.newDisplay);
+          $scope.newIS429courseInfo = "Click here for Course Info"
+          $scope.messages.push($scope.newModule);
         }
         };
       }
@@ -72,14 +84,14 @@
       <tr>
         <td>0800 - 1200</td>
         <td></td>
-        <td>{{newIS305}}</td>
+        <td>{{newIS305}}<br> <a href="http://sisapps.smu.edu.sg/CDDR/Courses.aspx?P=104&C=724&CT=(IS305)">{{newIS305courseInfo}}</a></td>
         <td></td>
         <td></td>
         <td></td>
       </tr>
       <tr>
         <td>1200 - 1500</td>
-        <td>{{newMGMT215}}</td>
+        <td>{{newMGMT215}}<br> <a href="http://info.smu.edu.sg/courses/outlines/UGRD/1220/MGMT215_LauTatChuan.pdf">{{newMGMT215courseInfo}}</a></td>
         <td></td>
         <td></td>
         <td></td>
@@ -89,7 +101,7 @@
         <td>1500 - 1900</td>
         <td></td>
         <td></td>
-        <td>{{newIS424}}</td>
+        <td>{{newIS424}}<br> <a href="http://sisapps.smu.edu.sg/CDDR/Courses.aspx?P=104&C=782&CT=(IS424)%2520Data%2520Mining%2520and%2520Business%2520Analytics">{{newIS424courseInfo}}</a></td>
         <td></td>
         <td></td>
       </tr>
