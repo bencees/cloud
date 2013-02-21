@@ -31,12 +31,13 @@
         
         <p>This project serves to source which job has the highest monetary prospect in Europe. Data was sourced from <a href="https://www.kaggle.com/c/job-salary-prediction/data">Kaggle</a> and used to compile a list of 1.04 million rows. As about 100,000 records will be cut off when the data is opened using Microsoft Excel, we are required to host the data through a cloud providing platform, namely, Dropbox and Amazon Web Service.  </p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Data: Raw data consisting of 1.04 million rows, with categories of ID, Title, Location, Contract Type, Company, Industry and Salary. </br>
+  Bootstrap: <a href="http://misoproject.com/">Miso Project </a>API was used in utilizing the Bootstraping functionality and CSS. 
+  </br>Duplication: To reduce the large data set, Mapreduce was used where each key | value represents the ID | Salary. To remove duplication, each colum was fit into an array and iterated. Each itereation adds IDs into new arrays and duplicates are not added. 
+  </br> Analysis: Salary, Company and Title columns are taken and sorted, with the highest salary are at the top and the rest are at the bottom. 
+  
+</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
